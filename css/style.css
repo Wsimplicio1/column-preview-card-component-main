@@ -1,0 +1,175 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+/*Config-padrao*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/*Tags*/
+
+body {
+    width: 1440px;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 0.94em;
+
+}
+
+img {
+    width: 31%;
+}
+
+button {
+    border: white;
+}
+
+
+/*Classes*/
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.1em;
+    margin-top: 18%;
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.76em;
+    line-height: 1.7;
+    margin: 20% 0 32% 0;
+}
+
+.elemento {
+    padding: 4.2em  3.2em;
+    height: 27em;
+    width: 17em;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn_1, .btn_2, .btn_3 {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 1.76em;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.76em;
+    background: hsl(0, 0%, 95%);
+    padding: 0.8em 1.7em 0.8em 1.7em;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn_1 {
+    color: #e38826;
+    
+  }
+
+  .btn_1:hover, .btn_2:hover, .btn_3:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btn_1:hover {
+    background: #e38826;
+  }
+
+  .btn_2 {
+    color: hsl(184, 100%, 22%);
+  }
+  
+  .btn_2:hover {
+    background: hsl(184, 100%, 22%);
+  }
+
+  .btn_3 {
+    color: hsl(179, 100%, 13%);
+  }
+  
+  .btn_3:hover {
+    background: hsl(179, 100%, 13%);
+  }
+
+
+/*ID*/
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/*Responsive*/
+
+@media (max-width: 1033px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elemento {
+        padding: 2.2em;
+        height: 14em;
+        width: 12em;
+    }
+
+    .paragraph {
+        margin: 9% 0 9% 0;
+        font-size: 0.5em;
+        font-weight: normal;
+    }
+
+    .headings {
+        font-size: 1.5em;
+        margin-top: 11%;
+    }
+
+    img {
+        width: 29%;
+    }
+
+    .btn_1, .btn_2, .btn_3 {
+        font-size: 0.5em;
+    }
+
+    #sedans {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    #luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+}
