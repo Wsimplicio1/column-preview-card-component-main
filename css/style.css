@@ -1,8 +1,9 @@
-/*Fonts*/
+/*_______________________1.fonts_______________________*/
+
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 
-/*Config-padrao*/
+/*_______________________2.config-padrao_______________________*/
 
 *{
     margin: 0%;
@@ -11,13 +12,12 @@
 }
 
 
-/*Tags*/
+/*_______________________3.tag_______________________*/
 
 body {
     width: 1440px;
     background-color: hsl(0, 0%, 95%);
     font-size: 0.94em;
-
 }
 
 img {
@@ -25,11 +25,11 @@ img {
 }
 
 button {
-    border: white;
+    border: 1px solid white;
 }
 
 
-/*Classes*/
+/*_______________________4.classe_______________________*/
 
 .container {
     width: 100vw;
@@ -65,6 +65,8 @@ button {
     border: none;
 }
 
+/*_______________________4.1.button_______________________*/
+
 .btn_1, .btn_2, .btn_3 {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
@@ -79,36 +81,35 @@ button {
 
 .btn_1 {
     color: #e38826;
-    
   }
 
-  .btn_1:hover, .btn_2:hover, .btn_3:hover {
-    text-decoration: none;
-    color: white;
+.btn_2 {
+    color: hsl(184, 100%, 22%);
   }
-  
-  .btn_1:hover {
+
+.btn_3 {
+    color: hsl(179, 100%, 13%);
+  }
+
+.btn_1:hover {
     background: #e38826;
   }
 
-  .btn_2 {
-    color: hsl(184, 100%, 22%);
-  }
-  
-  .btn_2:hover {
+.btn_2:hover {
     background: hsl(184, 100%, 22%);
   }
 
-  .btn_3 {
-    color: hsl(179, 100%, 13%);
-  }
-  
-  .btn_3:hover {
+.btn_3:hover {
     background: hsl(179, 100%, 13%);
   }
 
+.btn_1:hover, .btn_2:hover, .btn_3:hover {
+    text-decoration: none;
+    color: white;
+  }
 
-/*ID*/
+
+/*_______________________5.id_______________________*/
 
 #sedans {
     background-color: hsl(31, 77%, 52%);
@@ -126,9 +127,24 @@ button {
     border-bottom-right-radius: 8px;
 }
 
-/*Responsive*/
+
+/*_______________________6.responsive_______________________*/
 
 @media (max-width: 1033px) {
+
+/*_______________________6.1.tag_______________________*/
+
+    img {
+        width: 29%;
+    }
+
+    button {
+        border: 1px solid white;
+    }
+
+
+/*_______________________6.2.classe_______________________*/
+
     .container {
         display: flex;
         flex-direction: column;
@@ -151,13 +167,12 @@ button {
         margin-top: 11%;
     }
 
-    img {
-        width: 29%;
-    }
-
     .btn_1, .btn_2, .btn_3 {
         font-size: 0.5em;
     }
+    
+
+/*_______________________6.3.id_______________________*/
 
     #sedans {
         border-top-left-radius: 8px;
